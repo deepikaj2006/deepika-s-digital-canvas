@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
+import profileImg from "@/assets/deepika-profile.jpeg";
 
 const techStack = [
   "React", "Node.js", "Python", "PyTorch", "MongoDB", "Express", "Tailwind",
@@ -73,9 +74,14 @@ export function Hero() {
         >
           <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-40" />
           <div className="relative glass rounded-3xl p-8 shadow-elegant">
-            <div className="aspect-square rounded-2xl bg-gradient-primary flex items-center justify-center mb-6 relative overflow-hidden">
-              <span className="font-display text-9xl font-bold text-white/90">DJ</span>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,white,transparent_70%)] opacity-20" />
+            <div className="aspect-square rounded-2xl bg-gradient-primary mb-6 relative overflow-hidden">
+              <img
+                src={profileImg}
+                alt="Deepika J - Computer Science Engineering Student"
+                className="w-full h-full object-cover"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
             </div>
             <div className="flex justify-between items-center mb-2">
               <div>
