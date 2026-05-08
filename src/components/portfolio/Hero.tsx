@@ -49,8 +49,8 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/resume.pdf"
-              download
+              href="/Deepika_J_Resume.pdf"
+              download="Deepika_J_Resume.pdf"
               className="glass glass-hover px-7 py-3.5 rounded-full font-medium inline-flex items-center gap-2"
             >
               <Download className="w-4 h-4" /> Resume
