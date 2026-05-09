@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import profileImg from "@/assets/deepika-profile.jpeg";
+import resumePdf from "@/assets/Deepika_J_Resume.pdf";
 
 const techStack = [
   "React", "Node.js", "Python", "PyTorch", "MongoDB", "Express", "Tailwind",
@@ -50,10 +51,8 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/Deepika_J_Resume.pdf"
+              href={resumePdf}
               download="Deepika_J_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
               className="glass glass-hover px-7 py-3.5 rounded-full font-medium inline-flex items-center gap-2"
             >
               <Download className="w-4 h-4" /> Resume
