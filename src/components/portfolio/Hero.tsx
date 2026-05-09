@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import profileImg from "@/assets/deepika-profile.jpeg";
+import resumePdf from "@/assets/Deepika_J_Resume.pdf";
 
 const techStack = [
   "React", "Node.js", "Python", "PyTorch", "MongoDB", "Express", "Tailwind",
@@ -50,10 +51,8 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="/Deepika_J_Resume.pdf"
+              href={resumePdf}
               download="Deepika_J_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
               className="glass glass-hover px-7 py-3.5 rounded-full font-medium inline-flex items-center gap-2"
             >
               <Download className="w-4 h-4" /> Resume
@@ -97,7 +96,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-2 mt-5 pt-5 border-t border-border">
               <Stat n="300+" l="Problems" />
               <Stat n="2" l="Internships" />
-              <Stat n="20+" l="Certs" />
+              <Stat n="5+" l="Certs" />
             </div>
           </div>
         </motion.div>

@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 const profiles = [
   { name: "GitHub", url: "https://github.com/deepikaj2006", icon: Github, handle: "@deepikaj2006", color: "from-neon-blue to-neon-purple" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/deepika-j-474a93378/", icon: Linkedin, handle: "Deepika J", color: "from-neon-cyan to-neon-blue" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/deepika-j-474a93378", icon: Linkedin, handle: "Deepika J", color: "from-neon-cyan to-neon-blue" },
   { name: "LeetCode", url: "https://leetcode.com/u/deepi_2006/", icon: Code2, handle: "deepi_2006", color: "from-neon-purple to-neon-cyan" },
   { name: "HackerRank", url: "https://www.hackerrank.com/profile/23CS032_KPRIET", icon: Terminal, handle: "23CS032_KPRIET", color: "from-neon-blue to-neon-cyan" },
 ];
@@ -14,7 +14,7 @@ export function CodingProfiles() {
     <Section
       id="profiles"
       eyebrow="Around the Web"
-      title={<>Coding <span className="text-gradient">Profiles</span></>}
+      title={<>Social <span className="text-gradient">Profiles</span></>}
       subtitle="Connect with me across platforms."
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
