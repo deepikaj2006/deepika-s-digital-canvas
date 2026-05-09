@@ -96,7 +96,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-2 mt-5 pt-5 border-t border-border">
               <Stat n="300+" l="Problems" />
               <Stat n="2" l="Internships" />
-              <Stat n="20+" l="Certs" />
+              <Stat n="5+" l="Certs" />
             </div>
           </div>
         </motion.div>
