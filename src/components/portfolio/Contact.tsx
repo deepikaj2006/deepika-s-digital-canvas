@@ -67,15 +67,15 @@ export function Contact() {
             <p className="text-xs text-muted-foreground mb-3">Find me on</p>
             <div className="flex gap-3">
               {[
-                { icon: Github, url: "https://github.com/deepikaj2006" },
-                { icon: Linkedin, url: "https://www.linkedin.com/in/deepika-j-474a93378/" },
-                { icon: Mail, url: "mailto:deepikajagnathan283@gmail.com" },
+                { icon: Github, url: "https://github.com/deepikaj2006", external: true },
+                { icon: Linkedin, url: "https://www.linkedin.com/in/deepika-j-474a93378", external: true },
+                { icon: Mail, url: "mailto:deepikajagnathan283@gmail.com", external: false },
               ].map((s, i) => (
                 <a
                   key={i}
                   href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={s.external ? "_blank" : undefined}
+                  rel={s.external ? "noopener noreferrer" : undefined}
                   className="w-10 h-10 rounded-xl glass flex items-center justify-center hover:bg-gradient-primary hover:shadow-glow transition-all"
                 >
                   <s.icon className="w-4 h-4" />
