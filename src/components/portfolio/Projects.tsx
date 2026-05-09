@@ -13,7 +13,7 @@ const projects = [
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Redux"],
     categories: ["Full Stack", "Web Apps"] as Category[],
     github: "https://github.com/deepikaj2006/mern-estate",
-    demo: "#",
+    demo: "#" as string | null,
     accent: "from-neon-blue to-neon-purple",
   },
   {
@@ -22,8 +22,8 @@ const projects = [
       "AI-powered system using PyTorch & MobileNetV2 to detect fights and suspicious activities from images and videos. Built with a clean Django monitoring interface.",
     tech: ["Python", "Django", "PyTorch", "OpenCV", "Deep Learning"],
     categories: ["AI/ML", "Web Apps"] as Category[],
-    github: "https://github.com/deepikaj2006",
-    demo: "#",
+    github: "https://github.com/Harini-Moorthi/Threat-detector",
+    demo: null,
     accent: "from-neon-purple to-neon-cyan",
   },
 ];
@@ -96,12 +96,14 @@ export function Projects() {
                   >
                     <Github className="w-4 h-4" /> Code
                   </a>
-                  <a
-                    href={p.demo}
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground rounded-full px-4 py-2.5 text-sm font-medium hover:shadow-glow transition-all"
-                  >
-                    <ExternalLink className="w-4 h-4" /> Live Demo
-                  </a>
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground rounded-full px-4 py-2.5 text-sm font-medium hover:shadow-glow transition-all"
+                    >
+                      <ExternalLink className="w-4 h-4" /> Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.article>
