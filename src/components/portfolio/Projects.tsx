@@ -13,7 +13,7 @@ const projects = [
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Redux"],
     categories: ["Full Stack", "Web Apps"] as Category[],
     github: "https://github.com/deepikaj2006/mern-estate",
-    demo: "#" as string | null,
+    demo: "https://mern-estate-lz33.onrender.com/" as string | null,
     accent: "from-neon-blue to-neon-purple",
   },
   {
