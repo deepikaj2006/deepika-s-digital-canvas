@@ -38,7 +38,7 @@ export function Projects() {
     <Section
       id="projects"
       eyebrow="Featured Work"
-      title={<>Selected <span className="text-gradient">Projects</span></>}
+      title={<span className="text-gradient">Projects</span>}
       subtitle="A few things I've built recently."
     >
       <div className="flex flex-wrap justify-center gap-3 mb-12">
