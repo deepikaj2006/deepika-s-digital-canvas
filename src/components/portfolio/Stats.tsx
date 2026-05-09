@@ -3,8 +3,8 @@ import { useEffect, useRef } from "react";
 import { Trophy, Award, Code, Users } from "lucide-react";
 
 const stats = [
-  { icon: Code, value: 250, suffix: "+", label: "Problems Solved" },
-  { icon: Trophy, value: 6, suffix: "+", label: "Certifications" },
+  { icon: Code, value: 300, suffix: "+", label: "Problems Solved" },
+  { icon: Trophy, value: 20, suffix: "+", label: "Certifications" },
   { icon: Award, value: 2, suffix: "", label: "Internships" },
   { icon: Users, value: 1, suffix: "", label: "IEEE Member" },
 ];

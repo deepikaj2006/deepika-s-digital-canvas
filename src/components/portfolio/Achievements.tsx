@@ -3,7 +3,7 @@ import { Trophy, Users, Bug } from "lucide-react";
 import { Section } from "./Section";
 
 const items = [
-  { icon: Trophy, title: "250+ Coding Problems", text: "Solved across LeetCode, HackerRank, and GeeksforGeeks." },
+  { icon: Trophy, title: "300+ Coding Problems", text: "Solved across LeetCode, HackerRank, and GeeksforGeeks." },
   { icon: Users, title: "IEEE Education Society", text: "Active member contributing to academic & technical events." },
   { icon: Bug, title: "Strong Problem Solver", text: "Sharp debugging instincts and a love for clean code." },
 ];

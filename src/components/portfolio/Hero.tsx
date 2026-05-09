@@ -52,6 +52,8 @@ export function Hero() {
             <a
               href="/Deepika_J_Resume.pdf"
               download="Deepika_J_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="glass glass-hover px-7 py-3.5 rounded-full font-medium inline-flex items-center gap-2"
             >
               <Download className="w-4 h-4" /> Resume
@@ -93,9 +95,9 @@ export function Hero() {
               </span>
             </div>
             <div className="grid grid-cols-3 gap-2 mt-5 pt-5 border-t border-border">
-              <Stat n="250+" l="Problems" />
+              <Stat n="300+" l="Problems" />
               <Stat n="2" l="Internships" />
-              <Stat n="6+" l="Certs" />
+              <Stat n="20+" l="Certs" />
             </div>
           </div>
         </motion.div>
