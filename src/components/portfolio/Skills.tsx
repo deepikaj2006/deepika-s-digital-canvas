@@ -7,6 +7,7 @@ const groups = [
   { title: "Backend", items: ["Node.js", "Express.js", "Django", "REST APIs"] },
   { title: "Database", items: ["MongoDB", "MySQL"] },
   { title: "Machine Learning", items: ["Scikit-learn", "PyTorch", "Pandas", "NumPy", "Matplotlib"] },
+  { title: "Cloud", items: ["AWS (Learning)", "Cloud Concepts", "Firebase"] },
   { title: "Tools", items: ["Git", "GitHub", "VS Code", "Power BI"] },
 ];
 
