@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import profileImg from "@/assets/deepika-profile.jpeg";
-import resumePdf from "@/assets/Deepika_J_Resume.pdf";
+
+const RESUME_URL = "/Deepika_J_Resume.pdf";
 
 const techStack = [
   "React", "Node.js", "Python", "PyTorch", "MongoDB", "Express", "Tailwind",
