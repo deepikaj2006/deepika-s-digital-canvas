@@ -78,6 +78,12 @@ export function Contact() {
                   href={s.url}
                   target={s.external ? "_blank" : undefined}
                   rel={s.external ? "noopener noreferrer" : undefined}
+                  onClick={(e) => {
+                    if (s.external) {
+                      e.preventDefault();
+                      window.open(s.url, "_blank", "noopener,noreferrer");
+                    }
+                  }}
                   className="w-10 h-10 rounded-xl glass flex items-center justify-center hover:bg-gradient-primary hover:shadow-glow transition-all"
                 >
                   <s.icon className="w-4 h-4" />
