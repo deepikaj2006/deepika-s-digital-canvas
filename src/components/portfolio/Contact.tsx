@@ -23,11 +23,13 @@ export function Contact() {
       return;
     }
     setLoading(true);
+    const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
+    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
+    window.location.href = `mailto:deepikajagnathan283@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
-      toast.success("Message sent! I'll get back to you soon.");
-      setForm({ name: "", email: "", message: "" });
+      toast.success("Opening your email app to send the message...");
       setLoading(false);
-    }, 800);
+    }, 400);
   };
 
   return (
