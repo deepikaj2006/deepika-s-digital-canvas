@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import profileImg from "@/assets/deepika-profile.jpeg";
 
-const RESUME_URL = "/Deepika_J_Resume.pdf";
+const RESUME_URL = "https://drive.google.com/uc?export=download&id=1wLI2zRGSWPzOkZdXUZDPvtNINlS2EPXD";
 
 const techStack = [
   "React", "Node.js", "Python", "PyTorch", "MongoDB", "Express", "Tailwind",
@@ -53,7 +53,6 @@ export function Hero() {
             </a>
             <a
               href={RESUME_URL}
-              download="Deepika_J_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="glass glass-hover px-7 py-3.5 rounded-full font-medium inline-flex items-center gap-2"
