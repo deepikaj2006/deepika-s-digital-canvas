@@ -23,11 +23,13 @@ export function Contact() {
       return;
     }
     setLoading(true);
+    const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
+    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
+    window.location.href = `mailto:deepikajagnathan283@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
-      toast.success("Message sent! I'll get back to you soon.");
-      setForm({ name: "", email: "", message: "" });
+      toast.success("Opening your email app to send the message...");
       setLoading(false);
-    }, 800);
+    }, 400);
   };
 
   return (
@@ -76,6 +78,12 @@ export function Contact() {
                   href={s.url}
                   target={s.external ? "_blank" : undefined}
                   rel={s.external ? "noopener noreferrer" : undefined}
+                  onClick={(e) => {
+                    if (s.external) {
+                      e.preventDefault();
+                      window.open(s.url, "_blank", "noopener,noreferrer");
+                    }
+                  }}
                   className="w-10 h-10 rounded-xl glass flex items-center justify-center hover:bg-gradient-primary hover:shadow-glow transition-all"
                 >
                   <s.icon className="w-4 h-4" />
