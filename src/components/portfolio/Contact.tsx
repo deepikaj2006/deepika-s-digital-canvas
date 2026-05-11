@@ -70,7 +70,7 @@ export function Contact() {
             <div className="flex gap-3">
               {[
                 { icon: Github, url: "https://github.com/deepikaj2006", external: true },
-                { icon: Linkedin, url: "https://linkedin.com/in/deepika-j-474a93378", external: true },
+                { icon: Linkedin, url: "https://www.linkedin.com/in/deepika-j-474a93378/", external: true },
                 { icon: Mail, url: "mailto:deepikajagnathan283@gmail.com", external: false },
               ].map((s, i) => (
                 <a
