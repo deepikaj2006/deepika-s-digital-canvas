@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 const profiles = [
   { name: "GitHub", url: "https://github.com/deepikaj2006", icon: Github, handle: "@deepikaj2006", color: "from-neon-blue to-neon-purple" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/deepika-j-474a93378", icon: Linkedin, handle: "Deepika J", color: "from-neon-cyan to-neon-blue" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/deepika-j-474a93378/", icon: Linkedin, handle: "Deepika J", color: "from-neon-cyan to-neon-blue" },
   { name: "LeetCode", url: "https://leetcode.com/u/deepi_2006/", icon: Code2, handle: "deepi_2006", color: "from-neon-purple to-neon-cyan" },
   { name: "HackerRank", url: "https://www.hackerrank.com/profile/23CS032_KPRIET", icon: Terminal, handle: "23CS032_KPRIET", color: "from-neon-blue to-neon-cyan" },
 ];
